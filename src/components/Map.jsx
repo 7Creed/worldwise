@@ -13,20 +13,25 @@ import {
 
 import { useCities } from "../contexts/CitiesContext";
 import { useGeolocation } from "../hooks/useGeolocation";
+// import { useUrlPosition } from "../hooks/useUrlPosition";
 import Button from "./Button";
-import { useUrlPosition } from "../hooks/useUrlPosition";
+
+import { useSearchParams } from "react-router-dom";
 
 function Map() {
   const { cities } = useCities();
-  const [mapPosition, setMapPosition] = useState([50, 20]);
+  // const { mapLat, mapLng } = useUrlPosition();
+  const [mapPosition, setMapPosition] = useState([40, 0]);
 
+  const [searchParams] = useSearchParams();
+
+  const mapLat = searchParams.get("lat");
+  const mapLng = searchParams.get("lng");
   const {
     isLoading: isLoadingPosition,
     position: geoLocationPosition,
     getPosition,
   } = useGeolocation();
-
-  const { mapLat, mapLng } = useUrlPosition();
 
   useEffect(
     function () {
@@ -43,6 +48,8 @@ function Map() {
     [geoLocationPosition]
   );
 
+  // console.log(mapPosition);
+
   return (
     <div className={styles.mapContainer}>
       {!geoLocationPosition && (
@@ -50,6 +57,7 @@ function Map() {
           {isLoadingPosition ? "Loading..." : "Use your position"}
         </Button>
       )}
+
       <MapContainer
         center={mapPosition}
         zoom={6}
@@ -88,7 +96,12 @@ function Map() {
 
 function ChangeCenter({ position }) {
   const map = useMap();
-  map.setView(position);
+  console.log(position);
+  // map.setView((position) => position);
+  // map.setView(position, 6);
+  map.flyTo(position, 6, {
+    duration: 2,
+  });
   return null;
 }
 

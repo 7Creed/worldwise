@@ -49,15 +49,27 @@
       "id": "98443198"
     },
     {
-      "id": "9fc1",
-      "cityName": "Abuja",
-      "country": "Nigeria",
-      "emoji": "ng",
-      "date": "2024-05-04T13:41:54.234Z",
-      "notes": "udeqwdah",
+      "id": "c998",
+      "cityName": "Antequera",
+      "country": "Spain",
+      "emoji": "es",
+      "date": "2024-05-04T21:47:22.723Z",
+      "notes": "",
       "position": {
-        "lat": "50.401515322782366",
-        "lng": "18.522949218750004"
+        "lat": "36.98500309285596",
+        "lng": "-4.724121093750001"
+      }
+    },
+    {
+      "id": "ca83",
+      "cityName": "Gourma Rharous",
+      "country": "Mali",
+      "emoji": "ml",
+      "date": "2024-05-04T22:01:17.013Z",
+      "notes": "oboi",
+      "position": {
+        "lat": "16.088042220148818",
+        "lng": "-1.2304687500000002"
       }
     }
   ]
