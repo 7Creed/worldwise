@@ -25,7 +25,7 @@ import { useNavigate } from "react-router-dom";
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
 function Form() {
-  const { lat, lng } = useUrlPosition();
+  const [lat, lng] = useUrlPosition();
   const { createCity, isLoading } = useCities();
   const navigate = useNavigate();
 
@@ -85,6 +85,7 @@ function Form() {
       notes,
       position: { lat, lng },
     };
+
     console.log(newCity);
     await createCity(newCity);
     navigate("/app/cities");

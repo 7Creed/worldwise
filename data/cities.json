@@ -37,30 +37,6 @@
       "id": "98443197"
     },
     {
-      "cityName": "Nijar",
-      "country": "Spain",
-      "emoji": "es",
-      "date": "2023-04-03T07:47:59.202Z",
-      "notes": "",
-      "position": {
-        "lat": "36.967508314568164",
-        "lng": "-2.13128394200588"
-      },
-      "id": "98443198"
-    },
-    {
-      "id": "c998",
-      "cityName": "Antequera",
-      "country": "Spain",
-      "emoji": "es",
-      "date": "2024-05-04T21:47:22.723Z",
-      "notes": "",
-      "position": {
-        "lat": "36.98500309285596",
-        "lng": "-4.724121093750001"
-      }
-    },
-    {
       "id": "ca83",
       "cityName": "Gourma Rharous",
       "country": "Mali",
@@ -70,6 +46,30 @@
       "position": {
         "lat": "16.088042220148818",
         "lng": "-1.2304687500000002"
+      }
+    },
+    {
+      "id": "a1a3",
+      "cityName": "Aziz",
+      "country": "Algeria",
+      "emoji": "dz",
+      "date": "2024-05-10T18:10:20.958Z",
+      "notes": "Aziziz",
+      "position": {
+        "lat": "35.889050079360935",
+        "lng": "2.5708007812500004"
+      }
+    },
+    {
+      "id": "6362",
+      "cityName": "Bagneux",
+      "country": "France",
+      "emoji": "fr",
+      "date": "2024-05-10T18:15:04.901Z",
+      "notes": "Welcome francias",
+      "position": {
+        "lat": "48.80686346108519",
+        "lng": "2.3291015625000004"
       }
     }
   ]
